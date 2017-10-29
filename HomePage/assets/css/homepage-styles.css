@@ -31,23 +31,23 @@ div#topbar-2{
 }
 
 div#split-body{
-  min-height:200px;
   background:#4B5D6E;
   border-radius:5px;
+  margin:0 0 0 -14px;
 }
 
 div.split-section{
-  padding:20px;
+  padding:5px;
   background:#FFFFFF;
   border-radius:5px;
   text-align:left;
-  margin:5px;
   min-height:230px;
+  margin:13px;
 }
 
-div#split-body-row.row{
-  margin:0 auto;
+#split-body-row{
   padding-top:14px;
+  margin:0px;
 }
 
 .split-section button{
@@ -62,31 +62,58 @@ div#split-body-row.row{
 .split-section select{
   min-height:35px;
   border-radius:3px;
+  max-width:60%;
 }
 
 div#col3-bar{
-  height:30px;
+  height:50px;
   background:#72A215;
-  min-width:107%;
-  margin-left:-10px;
-  margin-top:-20px;
+  margin-top:-10px;
   border-radius:5px;
+  text-align:center;
+}
+
+#col3-bar > h5{
+  padding-top:14px;
+  color:white;
 }
 
 div#col4-bar{
   height:50px;
   background:#72A215;
-  min-width:107%;
-  margin-left:-10px;
-  margin-top:-20px;
+  margin-bottom:10px;
   border-radius:5px;
   color:white;
-  padding:10px;
+  padding:3px;
 }
 
 #col4-bar a{
   color:white;
   padding:10PX;
   font-weight:bold;
+}
+
+div#appointment-list-tab{
+  background:#566777;
+  min-height:88px;
+  margin-top:20px;
+  border-radius:3px;
+  clear:both;
+  padding:2px;
+}
+
+#appointment-list-tab p{
+  color:#FFFFFF;
+  font-size:1.2em;
+  padding:2px;
+}
+
+.appointment-list-tab-btn{
+  background:#72A215;
+  padding:3px;
+  font-size:1.1em;
+  float:left;
+  border:none;
+  margin:1px;
 }
 
