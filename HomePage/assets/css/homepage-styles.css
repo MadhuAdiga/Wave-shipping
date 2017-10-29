@@ -1,0 +1,92 @@
+a.navbar-brand.navbar-link{
+  min-height:110px;
+}
+
+ul.nav.navbar-nav.navbar-right{
+  min-width:83%;
+  float:right;
+}
+
+.nav a{
+  font-size:1.1em;
+  color:green;
+}
+
+div#topbar-1{
+  min-height:8px;
+  background:#5B6D7D;
+  margin-top:-20px;
+}
+
+div#topbar-2{
+  background:#5B6D7D;
+  min-height:50px;
+  border-radius:12px;
+  margin-top:-29px;
+  color:#FFFFFF;
+}
+
+#topbar-2 h3{
+  padding-top:10px;
+}
+
+div#split-body{
+  min-height:200px;
+  background:#4B5D6E;
+  border-radius:5px;
+}
+
+div.split-section{
+  padding:20px;
+  background:#FFFFFF;
+  border-radius:5px;
+  text-align:left;
+  margin:5px;
+  min-height:230px;
+}
+
+div#split-body-row.row{
+  margin:0 auto;
+  padding-top:14px;
+}
+
+.split-section button{
+  background:#72A215;
+}
+
+.split-section input{
+  min-height:35px;
+  border-radius:3px;
+}
+
+.split-section select{
+  min-height:35px;
+  border-radius:3px;
+}
+
+div#col3-bar{
+  height:30px;
+  background:#72A215;
+  min-width:107%;
+  margin-left:-10px;
+  margin-top:-20px;
+  border-radius:5px;
+}
+
+div#col4-bar{
+  height:50px;
+  background:#72A215;
+  min-width:107%;
+  margin-left:-10px;
+  margin-top:-20px;
+  border-radius:5px;
+  color:white;
+  padding:10px;
+}
+
+#col4-bar a{
+  color:white;
+  padding:10PX;
+  font-weight:bold;
+}
+

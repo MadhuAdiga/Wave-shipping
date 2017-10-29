@@ -1,0 +1,72 @@
+div#login-topbar{
+  background:#5B6D7D;
+  height:60px;
+  border-radius:20px;
+  margin-top:-35px;
+}
+
+div#login-topbar-line{
+  height:7px;
+  background:#5B6D7D;
+}
+
+body{
+  background:#F0F5F9;
+}
+
+div#login-body{
+  background:#FFFFFF;
+  min-height:550px;
+  min-width:250px;
+  border-radius:7px;
+  margin-top:20px;
+}
+
+#login-topbar > h3{
+  color:#FFFFFF;
+  text-align:center;
+  padding-top:20px;
+}
+
+#login-body > img{
+  margin:0 auto;
+  padding-top:30px;
+}
+
+div#login-details{
+  padding-top:40px;
+  color:#0C2E53;
+  font-size:1.2em;
+  margin:0 auto;
+  max-width:70%;
+}
+
+#login-details input{
+  min-width:90%;
+  color:#BBBBBB;
+  padding:25px;
+  margin:15px 0px 15px 0px;
+}
+
+#button-wrapper button{
+  min-width:63%;
+  min-height:50px;
+  background:#81B124;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+div#button-wrapper{
+  text-align:center;
+}
+
+div.text-input{
+  text-align:center;
+}
+
+.login-icon{
+  max-width:90%;
+  text-align:left;
+  margin:0 auto;
+}
+
