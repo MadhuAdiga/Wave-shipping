@@ -6,11 +6,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/css/login-styles.css">
+    <link rel="stylesheet" href="assets/css/homepage-styles.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="#">User Settings <i class="fa fa-gear"></i></a></li>
+                    <li role="presentation"><a href="#">Add Service <i class="glyphicon glyphicon-plus"></i></a></li>
+                    <li role="presentation"><a href="#">Copy Appointment <i class="fa fa-copy"></i></a></li>
+                    <li role="presentation"><a href="#">Delete Appointment <i class="fa fa-trash-o"></i></a></li>
+                    <li role="presentation"><a href="#">Report Console <i class="fa fa-bar-chart-o"></i></a></li>
+                    <li role="presentation"><a href="#">Logout </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="topbar-1"></div>
+    <div class="container-fluid">
+        <div id="topbar-2">
+            <h4 class="text-nowrap text-center">WAVE Appointment Home Console </h4></div>
+        <div id="split-body">
+            <div class="row" id="split-body-row">
+                <div class="col-lg-3 col-md-3 col-sm-6 split-section">
+                    <h4><strong>Vessel Name</strong></h4>
+                    <select name="Select Vessel" value="Select Vessel" autofocus="">
+                        <optgroup label="Select Vessel">
+                            <option value="12" selected="">Afra Hawthon</option>
+                            <option value="13">Anastasia</option>
+                            <option value="14">Cambridge</option>
+                        </optgroup>
+                    </select>
+                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
+                    <h4><strong>Port </strong></h4>
+                    <select name="Select Vessel" value="Select Vessel" autofocus="">
+                        <optgroup label="Select Principal">
+                            <option value="12" selected="">Abacus Ship Management Limited</option>
+                            <option value="13">Adharth Shipping Pvt Ltd</option>
+                            <option value="14">Altus Renewables Limited</option>
+                        </optgroup>
+                    </select>
+                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
+                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <h4><strong>Principal </strong></h4>
+                    <select name="Select Vessel" value="Select Vessel" autofocus="">
+                        <optgroup label="Select Port">
+                            <option value="12" selected="">Abashiri</option>
+                            <option value="13">Abu Dhabi</option>
+                            <option value="14">Adang Bay</option>
+                        </optgroup>
+                    </select>
+                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
+                    <h4><strong>Appointment Create Date</strong></h4>
+                    <h5 class="text-muted"><strong>From </strong></h5>
+                    <input type="date">
+                    <h5 class="text-muted"><strong>To </strong></h5>
+                    <input type="date">
+                    <h4><strong>Status </strong></h4>
+                    <div>
+                        <select>
+                            <optgroup label="Select Status">
+                                <option value="12" selected="">Enquiry</option>
+                                <option value="13">Receive and Acknowledge appointment</option>
+                                <option value="14">Pre arrival</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="appointment-list-tab">
+                                <div class="btn-group appointment-list-tab-btn" role="group">
+                                    <button class="btn btn-success appointment-list-tab-btn" type="button">Preferences <i class="material-icons">arrow_drop_down</i></button>
+                                    <button class="btn btn-success appointment-list-tab-btn" type="button">Refresh <i class="material-icons">refresh</i></button>
+                                </div>
+                                <div class="btn-group appointment-list-tab-btn" role="group">
+                                    <button class="btn btn-success appointment-list-tab-btn" type="button">Prev <i class="material-icons">chevron_left</i></button>
+                                    <button class="btn btn-success appointment-list-tab-btn" type="button">Next <i class="material-icons">keyboard_arrow_right</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="table-row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th><strong>Appointment ID</strong> </th>
+                                            <th><strong>Principal</strong> </th>
+                                            <th><strong>Port Name</strong> </th>
+                                            <th><strong>Vessal Name</strong> </th>
+                                            <th><strong>Voyage No.</strong> </th>
+                                            <th><strong>Wave Agent</strong> </th>
+                                            <th><strong>Created Date</strong> </th>
+                                            <th><strong>Task Status</strong> </th>
+                                            <th><strong>Enquiry No:</strong> </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>AEFJR000008 </td>
+                                            <td>Abacus Ship management Limited </td>
+                                            <td>Fujairah </td>
+                                            <td>African Falcon </td>
+                                            <td>Test </td>
+                                            <td>app admin</td>
+                                            <td>28/01/2016 </td>
+                                            <td>Pre Arrival Message </td>
+                                            <td>4103 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AEFJR000008 </td>
+                                            <td>Adhart Shipping Pte Ltd </td>
+                                            <td>Fujairah </td>
+                                            <td>African Falcon </td>
+                                            <td>Test </td>
+                                            <td>app admin</td>
+                                            <td>28/01/2016 </td>
+                                            <td>Pre Arrival Message </td>
+                                            <td>4103 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AEFJR000008 </td>
+                                            <td>Altus Renewables Limited </td>
+                                            <td>Fujairah </td>
+                                            <td>African Falcon </td>
+                                            <td>Test </td>
+                                            <td>app admin</td>
+                                            <td>28/01/2016 </td>
+                                            <td>Pre Arrival Message </td>
+                                            <td>4103 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AEFJR000008 </td>
+                                            <td>Abacus Ship management Limited </td>
+                                            <td>Fujairah </td>
+                                            <td>African Falcon </td>
+                                            <td>Viyage 89 </td>
+                                            <td>app admin</td>
+                                            <td>28/01/2016 </td>
+                                            <td>Arrival </td>
+                                            <td>4103 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AEFJR000008 </td>
+                                            <td>Abacus Ship management Limited </td>
+                                            <td>Fujairah </td>
+                                            <td>African Falcon </td>
+                                            <td>Viyage 89 </td>
+                                            <td>app admin</td>
+                                            <td>28/01/2016 </td>
+                                            <td>Enter Proforma &amp; Request Prefunding </td>
+                                            <td>4103 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AEFJR000008 </td>
+                                            <td>Abacus Ship management Limited </td>
+                                            <td>Fujairah </td>
+                                            <td>African Falcon </td>
+                                            <td>Viyage 89 </td>
+                                            <td>app admin</td>
+                                            <td>28/01/2016 </td>
+                                            <td>DA sent </td>
+                                            <td>4103 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
