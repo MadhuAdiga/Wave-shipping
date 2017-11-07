@@ -184,13 +184,14 @@
                 <!-- --------------------------------------- Input switch -------------------------------------- -->  
 
                     <h4><strong>Vessel Name</strong></h4>
-                    <select name="Select Vessel" value="Select Vessel" autofocus="">
+                    <select id="vessel" name="vessel" autofocus="">
                         <optgroup label="Select Vessel">
-                            <option value="12" selected="">Afra Hawthon</option>
-                            <option value="13">Anastasia</option>
-                            <option value="14">Cambridge</option>
+                            <option  selected="">Afra Hawthon</option>
+                            <option>Anastasia</option>
+                            <option>Cambridge</option>
                         </optgroup>
                     </select>
+<<<<<<< HEAD
                     <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
                         <!---------------------- Modal body start ----------------------- -->
                     <div class="modal fade" role="dialog" tabindex="-1" id="appointmentModal">
@@ -340,12 +341,121 @@
 
                     <h4><strong>Port </strong></h4>
                     <select name="Select Vessel" value="Select Vessel" autofocus="">
+=======
+					
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#vesselModal"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#vesselModal"> <i class="glyphicon glyphicon-plus"></i></button>
+                    
+					<!-- Trigger the modal with a button -->
+
+					<!-- Modal -->
+					<div id="vesselModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">WavePoint Appointment</h4>
+						  </div>
+						  <div class="modal-body">
+							<label>Principal</label>
+							<select id="principal" name="principal" value="principal" autofocus="" required>
+								<optgroup label="Select Principal">
+								<option  selected="">Abacus Ship Management Limited</option>
+								<option>Adharth Shipping Pvt Ltd</option>
+								<option>Altus Renewables Limited</option>
+								</optgroup>
+							</select><br><br>
+							
+							<label>Appointment type</label>
+							<div class="radio">
+								<label><input type="radio" name="appointmentType">Appointment</label>
+							</div>
+							<div class="radio">
+							<label><input type="radio" name="appointmentType">Enquiry</label>
+							</div><br>
+							
+							<label>Master Name</label>
+							<input type="text" required>
+							<br><br>
+						  
+						    <label>Voyage number</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Port</label>
+							<select id="port" name="port" value="port" autofocus="">
+							<optgroup label="Select Port">
+								<option selected="">Abashiri</option>
+								<option>Abu Dhabi</option>
+								<option>Adang Bay</option>
+							</optgroup>
+							</select><br><br>
+						  
+							<label>Vessel name</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>IMO</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Last Port</label>
+							<select id="port" name="port" value="port" autofocus="">
+							<optgroup label="Select Port">
+								<option selected="">Abashiri</option>
+								<option>Abu Dhabi</option>
+								<option>Adang Bay</option>
+							</optgroup>
+							</select>
+							<br><br>
+							
+							<label>Next Port</label>
+							<select id="port" name="port" value="port" autofocus="">
+							<optgroup label="Select Port">
+								<option selected="">Abashiri</option>
+								<option>Abu Dhabi</option>
+								<option>Adang Bay</option>
+							</optgroup>
+							</select>
+							<br><br>
+							
+							<label>Nominator</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Charterer</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Call Purpose</label>
+							<input type="text" required>
+							<br><br>
+						  
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+						  </div>
+						</div>
+
+					  </div>
+					</div>
+					</div>
+					<!-- Modal close -->
+					
+					
+					
+					<h4><strong>Principal </strong></h4>
+                    <select id="principal" name="principal" value="principal" autofocus="">
+>>>>>>> 54ee40ece9a5286a13477fabc7773c987b68c13e
                         <optgroup label="Select Principal">
-                            <option value="12" selected="">Abacus Ship Management Limited</option>
-                            <option value="13">Adharth Shipping Pvt Ltd</option>
-                            <option value="14">Altus Renewables Limited</option>
+                            <option  selected="">Abacus Ship Management Limited</option>
+                            <option>Adharth Shipping Pvt Ltd</option>
+                            <option>Altus Renewables Limited</option>
                         </optgroup>
                     </select>
+<<<<<<< HEAD
                     <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
                     <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
 
@@ -354,34 +464,196 @@
 
                     <h4><strong>Principal </strong></h4>
                     <select name="Select Vessel" value="Select Vessel" autofocus="">
+=======
+					
+					
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#principalModal"> <i class="glyphicon glyphicon-edit"></i></button>
+					<button class="btn btn-default" type="button" data-toggle="modal" data-target="#principalModal"> <i class="glyphicon glyphicon-plus"></i></button>
+					
+					<!-- Trigger the modal with a button -->
+
+					<!-- Modal -->
+					<div id="principalModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+					<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Add Principal</h4>
+						  </div>
+						  <div class="modal-body">
+							<label>Principal name</label>
+							<select id="principal" name="principal" value="principal" autofocus="" required>
+								<optgroup label="Select Principal">
+								<option  selected="">Abacus Ship Management Limited</option>
+								<option>Adharth Shipping Pvt Ltd</option>
+								<option>Altus Renewables Limited</option>
+								</optgroup>
+							</select><br><br>
+							
+							<label>Email</label>
+							<input type="email" required>
+							<br><br>
+							
+							<label>Email Ops</label>
+							<input type="email" required>
+							<br><br>
+							
+							<label>Email Da</label>
+							<input type="email" required>
+							<br><br>
+							
+							<label>Attention</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Address</label>
+							<input type="address" required>
+							<br><br>
+						  
+						    <label>Voyage number</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Country</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>State/Province</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>City</label>
+							<input type="text" required>
+							<br><br>
+
+							<label>Pincode</label>
+							<input type="number" required>
+							<br><br> 
+							
+							<label>Customer Ops comments</label>
+							<input type="text" required>
+							<br><br>
+							
+							<label>Phone</label>
+							<input type="number" required>
+							<br><br> 
+							
+							<label>Fax</label>
+							<input type="number" required>
+							<br><br> 
+							
+							<label>Principal GST registered</label>
+							<div class="radio">
+								<label><input type="radio" name="principalGST">Yes</label>
+							</div>
+							<div class="radio">
+							<label><input type="radio" name="principalGST">No</label>
+							</div><br>
+							
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+						  </div>
+						</div>
+
+					  </div>
+					</div>
+					</div>
+					<!-- Modal close -->
+					
+					
+                    
+                    
+					
+					<h4><strong>Port </strong></h4>
+                    <select id="port" name="port" value="port" autofocus="">
+>>>>>>> 54ee40ece9a5286a13477fabc7773c987b68c13e
                         <optgroup label="Select Port">
-                            <option value="12" selected="">Abashiri</option>
-                            <option value="13">Abu Dhabi</option>
-                            <option value="14">Adang Bay</option>
+                            <option selected="">Abashiri</option>
+                            <option>Abu Dhabi</option>
+                            <option>Adang Bay</option>
                         </optgroup>
                     </select>
+<<<<<<< HEAD
                     <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
                     <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
 
                 <!-- --------------------------------------- Input shift -------------------------------------- -->  
 
+=======
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#portModal"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#portModal"> <i class="glyphicon glyphicon-plus" ></i></button>
+					
+					<!-- Trigger the modal with a button -->
+
+					<!-- Modal -->
+					<div id="portModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+					<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Add Port</h4>
+						  </div>
+						  <div class="modal-body">
+							
+							
+							<label>Port Name</label>
+							<input type="text" required>
+							<br><br>
+						  
+						    <label>Port code</label>
+							<input type="number" required>
+							<br><br>
+							
+							<label>Country</label>
+							<input type="text" required>
+							<br><br>
+							
+							
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+						  </div>
+						</div>
+
+					  </div>
+					</div>
+					</div>
+					<!-- Modal close -->
+					
+					
+					
+					
+					
+>>>>>>> 54ee40ece9a5286a13477fabc7773c987b68c13e
                     <h4><strong>Appointment Create Date</strong></h4>
                     <h5 class="text-muted"><strong>From </strong></h5>
-                    <input type="date">
+                    <input id="fromdate" type="date">
                     <h5 class="text-muted"><strong>To </strong></h5>
+<<<<<<< HEAD
                     <input type="date">
 
                 <!-- --------------------------------------- Input shift -------------------------------------- -->  
 
+=======
+                    <input id="todate" type="date">
+>>>>>>> 54ee40ece9a5286a13477fabc7773c987b68c13e
                     <h4><strong>Status </strong></h4>
                     <div>
-                        <select>
+                        <select id="status">
                             <optgroup label="Select Status">
-                                <option value="12" selected="">Enquiry</option>
-                                <option value="13">Receive and Acknowledge appointment</option>
-                                <option value="14">Pre arrival</option>
+                                <option  selected="">Enquiry</option>
+                                <option>Receive and Acknowledge appointment</option>
+                                <option>Pre arrival</option>
                             </optgroup>
                         </select>
+						<br><br>
+						<button id="create-appointment" class="btn btn-success" type="submit">Create Appointment
+						</button>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
@@ -416,7 +688,7 @@
                                             <th><strong>Enquiry No:</strong> </th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody id="appointment-table">
                                         <tr>
                                             <td>AEFJR000008 </td>
                                             <td>Abacus Ship management Limited </td>
@@ -494,6 +766,23 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("#create-appointment").click(function(){
+			var vessel = $("#vessel").val();
+			var port = $("#port").val();
+			var status = $("#status").val();
+			var create = new Date().toDateString();
+			var principal = $("#principal").val();
+			var rand=Math.floor((Math.random() * 1) + 1);
+				$("#appointment-table").append("<tr><td>AEFJR0000"+rand+"</td><td>"+vessel+"</td><td>"+principal+"</td><td>"+port+"</td><td>Test</td><td>app admin</td><td>"+create+"</td><td>"+status+"</td><td>4103</td></tr>");
+			});
+			
+			// Find and remove selected table rows
+			
+		});    
+	</script>
 </body>
 
 </html>
