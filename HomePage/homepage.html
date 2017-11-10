@@ -179,7 +179,7 @@
                     </div>
 
                     <!---------------------- Modal body end ----------------------- -->
-                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#appointmentModal"> <i class="glyphicon glyphicon-plus"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#editVesselModal"> <i class="glyphicon glyphicon-plus"></i></button>
 
                 <!-- --------------------------------------- Input switch -------------------------------------- -->  
 
@@ -191,136 +191,85 @@
                             <option value="14">Cambridge</option>
                         </optgroup>
                     </select>
-                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#editVesselModal"> <i class="glyphicon glyphicon-edit"></i></button>
                         <!---------------------- Modal body start ----------------------- -->
-                    <div class="modal fade" role="dialog" tabindex="-1" id="appointmentModal">
+                    <div class="modal fade" role="dialog" tabindex="-1" id="editVesselModal">
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                    <h4 class="modal-title"><strong>WavePoint Appointment </strong></h4></div>
+                                    <h4 class="modal-title"><strong>Update Vessel </strong></h4></div>
                                 <div class="modal-body">
                                     <div class="row">
+
                                         <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Principal </strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Appointment type</strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio">Appointment</label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio">Enuiry</label>
-                                            </div>
-                                        </div>
-                                    </div><br>
-                                    <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Master Name</strong></h5></div>
+                                            <h5><strong>Vessel Name </strong></h5></div>
                                         <div class="col-lg-4 col-md-4 col-sm-3">
                                             <input type="text">
                                         </div>
+
                                         <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Voyage number</strong></h5></div>
+                                            <h5><strong>NRT </strong></h5></div>
                                         <div class="col-lg-4 col-md-4 col-sm-3">
                                             <input type="text">
                                         </div>
                                     </div><br>
                                     <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Port </strong></h5></div>
+                                         <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Vessel Type </strong></h5></div>
                                         <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
+                                            <input type="text">
                                         </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Vessel Name</strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                    </div><br>
-                                    <div class="row">
                                         <div class="col-lg-2 col-md-2 col-sm-3">
                                             <h5><strong>IMO </strong></h5></div>
                                         <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Last Port</strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                    </div><br>
-                                    <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Next Port</strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Nominator </strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
                                             <input type="text">
                                         </div>
                                     </div><br>
                                     <div class="row">
                                         <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Charterer </strong></h5></div>
+                                            <h5><strong>DWT</strong></h5></div>
                                         <div class="col-lg-4 col-md-4 col-sm-3">
                                             <input type="text">
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-3">
-                                            <h5><strong>Call on purpose</strong></h5></div>
-                                        <div class="col-lg-4 col-md-4 col-sm-3">
-                                            <select>
-                                                <optgroup label="This is a group">
-                                                    <option value="12" selected="">This is item 1</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
-                                                </optgroup>
-                                            </select>
+                                            <h5><strong>Bow Thruster</strong></h5>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">Yes</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">No</label>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </div><br>
+                                    <div class="row">
+                                         <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Registered </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Displacement </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                         <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>GRT </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>LOA </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    
+                                   
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -332,7 +281,96 @@
 
                     <!---------------------- Modal body end ----------------------- -->
 
-                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#addVesselModal"> <i class="glyphicon glyphicon-plus"></i></button>
+
+                    <!---------------------- Modal body start ----------------------- -->
+                    <div class="modal fade" role="dialog" tabindex="-1" id="addVesselModal">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title"><strong>Add Vessel </strong></h4></div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Vessel Name </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>NRT </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                         <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Vessel Type </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>IMO </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>DWT</strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Bow Thruster</strong></h5>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">Yes</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">No</label>
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                         <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Registered </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Displacement </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                         <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>GRT </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>LOA </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    
+                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" type="submit">Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------------- Modal body end ----------------------- -->
 
 
                 <!-- --------------------------------------- Input switch -------------------------------------- -->  
@@ -346,9 +384,105 @@
                             <option value="14">Altus Renewables Limited</option>
                         </optgroup>
                     </select>
-                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
-                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#editPortModal"> <i class="glyphicon glyphicon-edit" ></i></button>
+                    
+                    <!---------------------- Modal body start ----------------------- -->
+                    <div class="modal fade" role="dialog" tabindex="-1" id="editPortModal">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title"><strong>Update Port </strong></h4></div>
+                                <div class="modal-body">
+                                    <div class="row">
 
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Port Name </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Port Code </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Country </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <select>
+                                                <optgroup label="This is a group">
+                                                    <option value="12" selected="">This is item 1</option>
+                                                    <option value="13">This is item 2</option>
+                                                    <option value="14">This is item 3</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div><br>
+                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" type="submit">Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------------- Modal body end ----------------------- -->
+                    
+                    
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#addPortModal"> <i class="glyphicon glyphicon-plus"></i></button>
+                    
+                    <!---------------------- Modal body start ----------------------- -->
+                    <div class="modal fade" role="dialog" tabindex="-1" id="addPortModal">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title"><strong>Add Port </strong></h4></div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Port Name </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Port Code </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Country </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <select>
+                                                <optgroup label="This is a group">
+                                                    <option value="12" selected="">This is item 1</option>
+                                                    <option value="13">This is item 2</option>
+                                                    <option value="14">This is item 3</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div><br>
+                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" type="submit">Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------------- Modal body end ----------------------- -->
+                    
 
                 <!-- --------------------------------------- Input shift -------------------------------------- -->  
 
@@ -360,8 +494,307 @@
                             <option value="14">Adang Bay</option>
                         </optgroup>
                     </select>
-                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-edit"></i></button>
-                    <button class="btn btn-default" type="button"> <i class="glyphicon glyphicon-plus"></i></button>
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#editPrincipalModal"> <i class="glyphicon glyphicon-edit"></i></button>
+
+                    <!---------------------- Modal body start ----------------------- -->
+                    <div class="modal fade" role="dialog" tabindex="-1" id="editPrincipalModal">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title"><strong>Edit Principal </strong></h4></div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Principal Name </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Email </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Email Ops </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Email Da </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Attention </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Address </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+
+                                     <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Country </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <select>
+                                                <optgroup label="This is a group">
+                                                    <option value="12" selected="">This is item 1</option>
+                                                    <option value="13">This is item 2</option>
+                                                    <option value="14">This is item 3</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>State/Province </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>City </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Pincode </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Customer Ops comments </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Customer Da comments </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                   <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Phone </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Fax </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="panel-heading panel-primary" style="text-align: center">For Australlia customers only</div>
+                                    <div class="panel-heading panel-body">
+                                        <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Principal GST registered</strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">Yes</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Principal Funding GST</strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">Yes</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">No</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" type="submit">Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------------- Modal body end ----------------------- -->
+
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#addPrincipalModal"> <i class="glyphicon glyphicon-plus"></i></button>
+
+                    <!---------------------- Modal body start ----------------------- -->
+                    <div class="modal fade" role="dialog" tabindex="-1" id="addPrincipalModal">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title"><strong>Add Principal </strong></h4></div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Principal Name </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Email </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Email Ops </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Email Da </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Attention </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Address </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+
+                                     <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Country </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <select>
+                                                <optgroup label="This is a group">
+                                                    <option value="12" selected="">This is item 1</option>
+                                                    <option value="13">This is item 2</option>
+                                                    <option value="14">This is item 3</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>State/Province </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>City </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Pincode </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Customer Ops comments </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Customer Da comments </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                   <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Phone </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Fax </strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <input type="text">
+                                        </div>
+                                    </div><br>
+                                    <div class="panel-heading panel-primary" style="text-align: center">For Australlia customers only</div>
+                                    <div class="panel-heading panel-body">
+                                        <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Principal GST registered</strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">Yes</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-3">
+                                            <h5><strong>Principal Funding GST</strong></h5></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-3">
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">Yes</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio">No</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" type="submit">Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------------- Modal body end ----------------------- -->
 
                 <!-- --------------------------------------- Input shift -------------------------------------- -->  
 
@@ -384,6 +817,7 @@
                         </select>
                     </div>
                 </div>
+                <br>
                 <div class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="col-md-12">
@@ -398,7 +832,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><br>
                     <div class="row" id="table-row">
                         <div class="col-md-12">
                             <div class="table-responsive">
